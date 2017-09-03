@@ -17,7 +17,7 @@ class SingsList extends Component{
 
     componentWillMount(){
         this.text='循环播放';
-        this.ary=JSON.parse(localStorage.getItem("myLikeSong"));
+        this.ary=localStorage.getItem("myLikeSong")?JSON.parse(localStorage.getItem("myLikeSong")):[];
     }
     componentDidMount(){
         let songsList = JSON.parse(localStorage.getItem('songsList')) ? JSON.parse(localStorage.getItem('songsList')) : [];
