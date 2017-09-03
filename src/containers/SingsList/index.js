@@ -115,7 +115,7 @@ class SingsList extends Component{
 
         }
 
-        this.ary=JSON.parse(localStorage.getItem("myLikeSong"));
+        this.ary=localStorage.getItem("myLikeSong")?JSON.parse(localStorage.getItem("myLikeSong")):[];
 
 
         if(!this.props.playList.singOne){
